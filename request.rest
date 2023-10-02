@@ -1,0 +1,30 @@
+GET http://localhost:4000/newapi/users
+
+###
+POST http://localhost:4000/newapi/users/register
+Content-Type: application/json
+
+{
+    "name":"vons",
+    "password":"1234567",
+    "numbers":"08123456",
+    "username":"vonsy"
+}
+
+###
+POST http://localhost:4000/newapi/users/login
+Content-Type: application/json
+
+{
+    "username":"vonsy",
+    "password":"1234567"
+}
+
+###
+PUT http://localhost:4000/newapi/users/update
+Content-Type: application/json
+
+{
+    "username":"vonsy",
+    "password":"1234567"
+}
